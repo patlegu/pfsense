@@ -16,7 +16,7 @@ $config['virtualip']['vip'][0]['type'] = "single";
 $config['virtualip']['vip'][0]['subnet_bits'] = "24";
 $config['virtualip']['vip'][0]['subnet'] = "192.168.1.1";
 
-# PFSYNC
+# Set PFSYNC IP
 $config['interfaces']['pfsync']['enable'] = "true";
 $config['interfaces']['pfsync']['if'] = "em2";
 $config['interfaces']['pfsync']['descr'] = "PFSYNC";
