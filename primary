@@ -23,6 +23,33 @@ $config['interfaces']['pfsync']['descr'] = "PFSYNC";
 $config['interfaces']['pfsync']['ipaddr'] = "172.16.1.1";
 $config['interfaces']['pfsync']['subnet'] = "24";
 
+# Enable HASYNC
+$config['hasync']['pfsyncenabled'] = "on";
+$config['hasync']['syncsynchronizeusers'] = "on";
+$config['hasync']['synchronizeauthservers'] = "on";
+$config['hasync']['synchronizecerts'] = "on";
+$config['hasync']['synchronizerules'] = "on";
+$config['hasync']['synchronizeschedules'] = "on";
+$config['hasync']['synchronizealiases'] = "on";
+$config['hasync']['synchronizenat'] = "on";
+$config['hasync']['synchronizeipsec'] = "on";
+$config['hasync']['synchronizeopenvpn'] = "on";
+$config['hasync']['synchronizedhcpd'] = "on";
+$config['hasync']['synchronizewol'] = "on";
+$config['hasync']['synchronizestaticroutes'] = "on";
+$config['hasync']['synchronizelb'] = "on";
+$config['hasync']['synchronizevirtualip'] = "on";
+$config['hasync']['synchronizetrafficshaper'] = "on";
+$config['hasync']['synchronizetrafficshaperlimiter'] = "on";
+$config['hasync']['synchronizetrafficshaperlayer7'] = "on";
+$config['hasync']['synchronizednsforwarder'] = "on";
+$config['hasync']['synchronizecaptiveportal'] = "on";
+$config['hasync']['pfsyncpeerip'] = "172.16.1.2";
+$config['hasync']['pfsyncinterface'] = "pfsync";
+$config['hasync']['synchronizetoip'] = "172.16.1.2";
+$config['hasync']['username'] = "admin";
+$config['hasync']['password'] = "password";
+
 # Write changes
 write_config();
 
