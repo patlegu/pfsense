@@ -25,7 +25,7 @@ $config['interfaces']['pfsync']['subnet'] = "24";
 
 # Enable HASYNC
 $config['hasync']['pfsyncenabled'] = "on";
-$config['hasync']['syncsynchronizeusers'] = "on";
+$config['hasync']['synchronizeusers'] = "on";
 $config['hasync']['synchronizeauthservers'] = "on";
 $config['hasync']['synchronizecerts'] = "on";
 $config['hasync']['synchronizerules'] = "on";
