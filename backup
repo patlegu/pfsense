@@ -11,6 +11,11 @@ $config['interfaces']['pfsync']['descr'] = "PFSYNC";
 $config['interfaces']['pfsync']['ipaddr'] = "172.16.1.2";
 $config['interfaces']['pfsync']['subnet'] = "24";
 
+# Enable HASYNC
+$config['hasync']['pfsyncenabled'] = "on";
+$config['hasync']['pfsyncpeerip'] = "172.16.1.1";
+$config['hasync']['pfsyncinterface'] = "pfsync";
+
 # Write changes
 write_config();
 
