@@ -4,6 +4,13 @@ $config['interfaces']['lan']['descr'] = "LAN";
 $config['interfaces']['lan']['ipaddr'] = "192.168.1.2";
 $config['interfaces']['lan']['subnet'] = "24";
 
+# Set PFSYNC IP
+$config['interfaces']['pfsync']['enable'] = "true";
+$config['interfaces']['pfsync']['if'] = "em2";
+$config['interfaces']['pfsync']['descr'] = "PFSYNC";
+$config['interfaces']['pfsync']['ipaddr'] = "172.16.1.1";
+$config['interfaces']['pfsync']['subnet'] = "24";
+
 # Set LAN virtual IP
 $config['virtualip']['vip'][0]['mode'] = "carp";
 $config['virtualip']['vip'][0]['interface'] = "lan";
@@ -15,13 +22,6 @@ $config['virtualip']['vip'][0]['descr'] = "vip";
 $config['virtualip']['vip'][0]['type'] = "single";
 $config['virtualip']['vip'][0]['subnet_bits'] = "24";
 $config['virtualip']['vip'][0]['subnet'] = "192.168.1.1";
-
-# Set PFSYNC IP
-$config['interfaces']['pfsync']['enable'] = "true";
-$config['interfaces']['pfsync']['if'] = "em2";
-$config['interfaces']['pfsync']['descr'] = "PFSYNC";
-$config['interfaces']['pfsync']['ipaddr'] = "172.16.1.1";
-$config['interfaces']['pfsync']['subnet'] = "24";
 
 # Enable HASYNC
 $config['hasync']['pfsyncenabled'] = "on";
