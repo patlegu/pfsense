@@ -30,6 +30,7 @@ $config['hasync']['pfsyncinterface'] = "pfsync";
 $config['hasync']['synchronizetoip'] = "172.16.1.2";
 $config['hasync']['username'] = "admin";
 $config['hasync']['password'] = "password";
+
 $config['hasync']['synchronizeusers'] = "on";
 $config['hasync']['synchronizeauthservers'] = "on";
 $config['hasync']['synchronizecerts'] = "on";
