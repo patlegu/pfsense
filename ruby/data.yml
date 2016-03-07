@@ -1,0 +1,11 @@
+vlans:
+  0:
+    if: 'em1'
+    tag: '1'
+    descr: 'vlan1'
+    vlanif: 'em1_vlan1'
+  1:
+    if: 'em1'
+    tag: '2'
+    descr: 'vlan2'
+    vlanif: 'em1_vlan2'
