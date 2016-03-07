@@ -1,21 +1,21 @@
 # Set LAN IP
 $config['interfaces']['lan']['if'] = "em1";
 $config['interfaces']['lan']['descr'] = "LAN";
-$config['interfaces']['lan']['ipaddr'] = "192.168.1.2";
+$config['interfaces']['lan']['ipaddr'] = "172.16.1.2";
 $config['interfaces']['lan']['subnet'] = "24";
 
 # Set PFSYNC IP
 $config['interfaces']['pfsync']['enable'] = "true";
 $config['interfaces']['pfsync']['if'] = "em2";
 $config['interfaces']['pfsync']['descr'] = "PFSYNC";
-$config['interfaces']['pfsync']['ipaddr'] = "172.16.1.1";
-$config['interfaces']['pfsync']['subnet'] = "24";
+$config['interfaces']['pfsync']['ipaddr'] = "192.168.1.1";
+$config['interfaces']['pfsync']['subnet'] = "30";
 
 # Enable HASYNC
 $config['hasync']['pfsyncenabled'] = "on";
-$config['hasync']['pfsyncpeerip'] = "172.16.1.2";
+$config['hasync']['pfsyncpeerip'] = "192.168.1.2";
 $config['hasync']['pfsyncinterface'] = "pfsync";
-$config['hasync']['synchronizetoip'] = "172.16.1.2";
+$config['hasync']['synchronizetoip'] = "192.168.1.2";
 $config['hasync']['username'] = "admin";
 $config['hasync']['password'] = "pfsense";
 
@@ -49,7 +49,7 @@ $config['virtualip']['vip'][0]['password'] = "password";
 $config['virtualip']['vip'][0]['descr'] = "vip";
 $config['virtualip']['vip'][0]['type'] = "single";
 $config['virtualip']['vip'][0]['subnet_bits'] = "24";
-$config['virtualip']['vip'][0]['subnet'] = "192.168.1.1";
+$config['virtualip']['vip'][0]['subnet'] = "172.16.1.1";
 
 # Write changes
 write_config();
