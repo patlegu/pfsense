@@ -1,0 +1,4 @@
+# Create VLAN's
+<% hash['vlans'].each do |key, value| %>
+$config['vlans']['vlan'][<%= key %>]['if'] = "<%= value['if'] %>";
+<% end %>
