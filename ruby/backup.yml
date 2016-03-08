@@ -1,9 +1,7 @@
 system:
   dnsserver:
-    '0':
-      ip: '8.8.8.8'
-    '1':
-      ip: '8.8.4.4'
+    '0': '8.8.8.8'
+    '1': '8.8.4.4'
   domain: 'localdomain'
   hostname: 'backup'
 
