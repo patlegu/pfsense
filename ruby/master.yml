@@ -24,6 +24,14 @@ interfaces:
     ipaddr: '192.168.1.1'
     subnet: '30'
 
+hasync:
+  pfsyncenabled: 'on'
+  pfsyncpeerip: '192.168.1.2'
+  pfsyncinterface: 'pfsync'
+  synchronizetoip: '192.168.1.2'
+  username: 'admin'
+  password: 'pfsense'
+
 vlans:
   vlan:
     '0':
@@ -36,11 +44,3 @@ vlans:
       tag: '2'
       descr: 'vlan2'
       vlanif: 'em1_vlan2'
-
-hasync:
-  pfsyncenabled: 'on'
-  pfsyncpeerip: '192.168.1.2'
-  pfsyncinterface: 'pfsync'
-  synchronizetoip: '192.168.1.2'
-  username: 'admin'
-  password: 'pfsense'
