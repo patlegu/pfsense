@@ -4,7 +4,8 @@ system:
       ip: '8.8.8.8'
     '1':
       ip: '8.8.4.4'
-  domain: localdomain
+  domain: 'localdomain'
+  hostname: 'master'
 
 vlans:
   vlan:
