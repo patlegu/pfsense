@@ -3,12 +3,14 @@ $config['system’]['domain’] = "<%= hash['system']['domain'] %>";
 
 # Set DNS servers
 <% hash['system']['dnsserver'].each do |key, value| %>
-$config['system']['dnsserver'][<%= key %>] = <%= value['ip'] %>;
+$config['system']['dnsserver'][<%= key %>] = "<%= value['ip'] %>";
 <% end %>
 
 # Interfaces
 <% hash['interfaces'].each do |key, value| %>
-$config['interfaces'][<%= key %>]['if'] =  <%= value['if'] %>;
+<% value.each do |parameter, setting| %>
+$config['interfaces'][<%= key %>]['<%= parameter %>'] = "<%= setting %>";
+<% end %>
 <% end %>
 
 # Create VLAN's
