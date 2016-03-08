@@ -4,7 +4,7 @@ $config['system']['dnsserver'][<%= key %>] = <%= value['ip'] %>
 <% end %>
 
 # Create VLAN's
-<% hash['system']['vlan'].each do |key, value| %>
+<% hash['vlans']['vlan'].each do |key, value| %>
 $config['vlans']['vlan'][<%= key %>]['if'] = "<%= value['if'] %>";
 $config['vlans']['vlan'][<%= key %>]['tag'] = "<%= value['tag'] %>";
 $config['vlans']['vlan'][<%= key %>]['descr'] = "<%= value['descr'] %>";
