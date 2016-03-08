@@ -7,6 +7,25 @@ system:
   domain: 'localdomain'
   hostname: 'master'
 
+interfaces:
+  'wan':
+    enable: 'true'
+    if: 'em0'
+    descr: 'WAN'
+    ipaddr: 'dhcp'
+  'lan':
+    enable: 'true'
+    if: 'em1'
+    descr: 'LAN'
+    ipaddr: '172.16.1.2'
+    subnet: '24'
+  'pfsync':
+    enable: 'true'
+    if: 'em2'
+    descr: 'PFSYNC'
+    ipaddr: '192.168.1.1'
+    subnet: '30'
+
 vlans:
   vlan:
     '0':
