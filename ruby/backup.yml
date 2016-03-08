@@ -24,6 +24,11 @@ interfaces:
     ipaddr: '192.168.1.2'
     subnet: '30'
 
+hasync:
+  pfsyncenabled: 'on'
+  pfsyncpeerip: '192.168.1.1'
+  pfsyncinterface: 'pfsync'
+
 vlans:
   vlan:
     '0':
