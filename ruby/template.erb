@@ -1,3 +1,6 @@
+# Set domain
+$config['system’]['domain’] = "<%= hash['system']['domain'] %>";
+
 # Set DNS servers
 <% hash['system']['dnsserver'].each do |key, value| %>
 $config['system']['dnsserver'][<%= key %>] = <%= value['ip'] %>
