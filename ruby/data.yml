@@ -1,10 +1,17 @@
+system:
+  - hostname: 'master'
+    domain: 'localdomain'
+    dnsserver:
+      - 8.8.8.8
+      - 8.8.4.4
+
 vlans:
-  0:
+  - id: '0'
     if: 'em1'
     tag: '1'
     descr: 'vlan1'
     vlanif: 'em1_vlan1'
-  1:
+  - id: '1'
     if: 'em1'
     tag: '2'
     descr: 'vlan2'
