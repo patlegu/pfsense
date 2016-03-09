@@ -21,6 +21,6 @@ $config['hasync']['<%= key %>'] = "<%= value %>";
 # VLANS
 <% hash['vlans']['vlan'].each do |key, value| %>
 <% value.each do |parameter, setting| %>
-$config['vlans']['vlan']['<%= key %>']['<%= parameter %>'] = "<%= setting %>";
+$config['vlans']['vlan'][<%= key %>]['<%= parameter %>'] = "<%= setting %>";
 <% end %>
 <% end %>
