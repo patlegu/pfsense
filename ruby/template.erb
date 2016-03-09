@@ -9,18 +9,18 @@ $config['system']['dnsserver'][<%= key %>] = "<%= value %>";
 # Interfaces
 <% hash['interfaces'].each do |key, value| %>
 <% value.each do |parameter, setting| %>
-$config['interfaces'][<%= key %>]['<%= parameter %>'] = "<%= setting %>";
+$config['interfaces']['<%= key %>']['<%= parameter %>'] = "<%= setting %>";
 <% end %>
 <% end %>
 
 # HASYNC
 <% hash['hasync'].each do |key, value| %>
-$config['hasync'][<%= key %>] = "<%= value %>";
+$config['hasync']['<%= key %>'] = "<%= value %>";
 <% end %>
 
 # VLANS
 <% hash['vlans']['vlan'].each do |key, value| %>
 <% value.each do |parameter, setting| %>
-$config['vlans']['vlan'][<%= key %>]['<%= parameter %>'] = "<%= setting %>";
+$config['vlans']['vlan']['<%= key %>']['<%= parameter %>'] = "<%= setting %>";
 <% end %>
 <% end %>
