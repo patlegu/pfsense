@@ -1,12 +1,12 @@
-# System
+# SYSTEM - DOMAIN
 $config['system’]['domain’] = "<%= hash['system']['domain'] %>";
 
-# Set DNS servers
+# SYSTEM - DNS
 <% hash['system']['dnsserver'].each do |key, value| %>
 $config['system']['dnsserver'][<%= key %>] = "<%= value %>";
 <% end %>
 
-# Interfaces
+# INTERFACES
 <% hash['interfaces'].each do |key, value| %>
 <% value.each do |parameter, setting| %>
 $config['interfaces']['<%= key %>']['<%= parameter %>'] = "<%= setting %>";
@@ -22,5 +22,12 @@ $config['hasync']['<%= key %>'] = "<%= value %>";
 <% hash['vlans']['vlan'].each do |key, value| %>
 <% value.each do |parameter, setting| %>
 $config['vlans']['vlan'][<%= key %>]['<%= parameter %>'] = "<%= setting %>";
+<% end %>
+<% end %>
+
+# VIRTUAL IP
+<% hash['virtualip']['vip'].each do |key, value| %>
+<% value.each do |parameter, setting| %>
+$config['virtualip']['vip'][<%= key %>]['<%= parameter %>'] = "<%= setting %>";
 <% end %>
 <% end %>
