@@ -63,3 +63,8 @@ vlans:
       tag: '2'
       descr: 'vlan2'
       vlanif: 'em1_vlan2'
+      
+virtualip:
+  vip:
+    '0':
+      mode: 'carp'
