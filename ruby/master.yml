@@ -68,3 +68,12 @@ virtualip:
   vip:
     '0':
       mode: 'carp'
+      interface: 'lan'
+      vhid: '1'
+      advskew: 0'
+      advbase: '1'
+      password: 'password'
+      descr: 'vip'
+      type: 'single'
+      subnet_bits: '24'
+      subnet: '172.16.1.1'
