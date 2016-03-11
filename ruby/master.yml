@@ -23,6 +23,12 @@ interfaces:
     descr: 'PFSYNC'
     ipaddr: '192.168.1.1'
     subnet: '30'
+  'opt1':
+    enable: 'true'
+    if: 'em1_vlan1'
+    descr: 'OPT1'
+    ipaddr: '10.1.1.1'
+    subnet: '30'
 
 hasync:
   pfsyncenabled: 'on'
