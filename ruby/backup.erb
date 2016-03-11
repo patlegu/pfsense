@@ -1,0 +1,41 @@
+# SYSTEM - DOMAIN
+$config['system']['domain'] = "<%= hash['system']['domain'] %>";
+
+# SYSTEM - DNS
+<% hash['system']['dnsserver'].each do |key, value| %>
+$config['system']['dnsserver'][<%= key %>] = "<%= value %>";
+<% end %>
+
+# INTERFACES
+<% hash['interfaces'].each do |key, value| %>
+<% value.each do |parameter, setting| %>
+$config['interfaces']['<%= key %>']['<%= parameter %>'] = "<%= setting %>";
+<% end %>
+<% end %>
+
+# HASYNC
+<% hash['hasync'].each do |key, value| %>
+$config['hasync']['<%= key %>'] = "<%= value %>";
+<% end %>
+
+# VLANS
+<% hash['vlans']['vlan'].each do |key, value| %>
+<% value.each do |parameter, setting| %>
+$config['vlans']['vlan'][<%= key %>]['<%= parameter %>'] = "<%= setting %>";
+<% end %>
+<% end %>
+
+# VIRTUAL IP
+<% hash['virtualip']['vip'].each do |key, value| %>
+<% value.each do |parameter, setting| %>
+$config['virtualip']['vip'][<%= key %>]['<%= parameter %>'] = "<%= setting %>";
+<% end %>
+<% end %>
+
+# Write changes
+write_config();
+
+# Go
+exec;
+
+exit
