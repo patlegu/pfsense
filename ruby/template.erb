@@ -31,3 +31,11 @@ $config['vlans']['vlan'][<%= key %>]['<%= parameter %>'] = "<%= setting %>";
 $config['virtualip']['vip'][<%= key %>]['<%= parameter %>'] = "<%= setting %>";
 <% end %>
 <% end %>
+
+# Write changes
+write_config();
+
+# Go
+exec;
+
+exit
