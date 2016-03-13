@@ -1,34 +1,34 @@
-# SYSTEM - DOMAIN
+# SYSTEM
 $config['system']['domain'] = "<%= hash['system']['domain'] %>";
 
-# SYSTEM - DNS
-<% hash['system']['dnsserver'].each do |key, value| %>
-$config['system']['dnsserver'][<%= key %>] = "<%= value %>";
+# SYSTEM
+<% hash['system']['dnsserver'].each do |ka, va| %>
+$config['system']['dnsserver'][<%= ka %>] = "<%= va %>";
 <% end %>
 
 # INTERFACES
-<% hash['interfaces'].each do |key, value| %>
-<% value.each do |parameter, setting| %>
-$config['interfaces']['<%= key %>']['<%= parameter %>'] = "<%= setting %>";
+<% hash['interfaces'].each do |ka, va| %>
+<% va.each do |kb, vb| %>
+$config['interfaces']['<%= ka %>']['<%= kb %>'] = "<%= vb %>";
 <% end %>
 <% end %>
 
 # HASYNC
-<% hash['hasync'].each do |key, value| %>
-$config['hasync']['<%= key %>'] = "<%= value %>";
+<% hash['hasync'].each do |ka, va| %>
+$config['hasync']['<%= ka %>'] = "<%= va %>";
 <% end %>
 
 # VLANS
-<% hash['vlans']['vlan'].each do |key, value| %>
-<% value.each do |parameter, setting| %>
-$config['vlans']['vlan'][<%= key %>]['<%= parameter %>'] = "<%= setting %>";
+<% hash['vlans']['vlan'].each do |ka, va| %>
+<% va.each do |kb, vb| %>
+$config['vlans']['vlan'][<%= ka %>]['<%= kb %>'] = "<%= vb %>";
 <% end %>
 <% end %>
 
-# VIRTUAL IP
-<% hash['virtualip']['vip'].each do |key, value| %>
-<% value.each do |parameter, setting| %>
-$config['virtualip']['vip'][<%= key %>]['<%= parameter %>'] = "<%= setting %>";
+# VIRTUALIP
+<% hash['virtualip']['vip'].each do |ka, va| %>
+<% va.each do |kb, vb| %>
+$config['virtualip']['vip'][<%= ka %>]['<%= kb %>'] = "<%= vb %>";
 <% end %>
 <% end %>
 
