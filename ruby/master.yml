@@ -1,9 +1,9 @@
 system:
+  hostname: 'master'
+  domain: 'localdomain'
   dnsserver:
     '0': '8.8.8.8'
     '1': '8.8.4.4'
-  domain: 'localdomain'
-  hostname: 'master'
 
 interfaces:
   'wan':
