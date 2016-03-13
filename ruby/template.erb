@@ -1,4 +1,5 @@
 # SYSTEM
+$config['system']['hostname'] = "<%= hash['system']['hostname'] %>";
 $config['system']['domain'] = "<%= hash['system']['domain'] %>";
 <% hash['system']['dnsserver'].each do |ka, va| %>
 $config['system']['dnsserver'][<%= ka %>] = "<%= va %>";
