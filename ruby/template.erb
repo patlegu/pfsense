@@ -26,7 +26,7 @@ $config['vlans']['vlan'][<%= ka %>]['<%= kb %>'] = "<%= vb %>";
 <% end %>
 
 # VIRTUALIP
-<% if !hash['virtualip']['vip'].empty? %>
+<% unless hash['virtualip'].nil? %>
 <% hash['virtualip']['vip'].each do |ka, va| %>
 <% va.each do |kb, vb| %>
 $config['virtualip']['vip'][<%= ka %>]['<%= kb %>'] = "<%= vb %>";
