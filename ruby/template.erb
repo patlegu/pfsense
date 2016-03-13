@@ -1,7 +1,5 @@
 # SYSTEM
 $config['system']['domain'] = "<%= hash['system']['domain'] %>";
-
-# SYSTEM
 <% hash['system']['dnsserver'].each do |ka, va| %>
 $config['system']['dnsserver'][<%= ka %>] = "<%= va %>";
 <% end %>
@@ -34,10 +32,8 @@ $config['virtualip']['vip'][<%= ka %>]['<%= kb %>'] = "<%= vb %>";
 <% end %>
 <% end %>
 
-# Write changes
 write_config();
 
-# Go
 exec;
 
 exit
