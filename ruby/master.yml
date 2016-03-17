@@ -76,7 +76,7 @@ virtualip:
       mode: 'carp'
       interface: 'lan'
       vhid: '1'
-      advskew: 0'
+      advskew: '0'
       advbase: '1'
       password: 'password'
       descr: 'vip'
