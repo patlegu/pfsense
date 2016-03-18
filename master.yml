@@ -6,16 +6,10 @@ system:
     '1': '8.8.4.4'
   group:
     '1':
-      name: admins
-      description: "System Administrators"
-      scope: system
-      gid: '1999'
       member:
         '0': '0'
         '1': '2000'
         '2': '2001'
-      priv: 
-        '0': page-all
   user:
     '1':
       descr: 'Rudi Broekhuizen'
