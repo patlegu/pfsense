@@ -9,7 +9,7 @@ system:
       name: admins
       description: "System Administrators"
       scope: system
-      gid: 1999
+      gid: '1999'
       member:
         '0': '0'
         '1': '2000'
