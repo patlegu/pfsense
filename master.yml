@@ -4,22 +4,21 @@ system:
   dnsserver:
     '0': '8.8.8.8'
     '1': '8.8.4.4'
-
-user:
-  '1':
-    descr: Rudi Broekhuizen 
-    name: rudi.broekhuizen
-    scope: user
-    authorizedkeys: c3NoLXJzYSBBQUFBQjNOemFDMXljMkVBQUFBREFRQUJBQUFCQVFEZVJyVnVvakV4WUJXZ0lWN1VsTGZZTHZ6R3BXOWhTenJqbDlxSjdLYjNFL3gra3EycnVtYTNMWGx2TXpGWG9DS0pNWXZxdlhVRmoyRHp3aCtpSjJiQ3loNWlsV2dUTUx2QXd6UmwxTGRBVjhJYkRWWU5aR0NIQ3pYa3l4TE1BRWR4WE1IVllsNk4vcStSQlArSFFDeVNwd09qdjg2YzVQZ1hvTDRCT254THk1VEFveFNzZnZ4UmNIVDQyVGhZSzFDL1I1UUM4VW9CZHBKMVJCaFFSakJKUE1XcDl6UnlPYWZOd0U3SXRpMTVnS0hwMDRibjlVR3FIUlRBMXVsK1E2WUVGempvcVV4ZTRWQ0hPYk02QlMvRHBEKytUUE1YanpVK2FlSjh0a3hobVlrR1JLWUp4L0tLM3VhS1B2Ky9Fa09EZVB2d1RWc2hpUTh2OXFPWHgwWUo=
-    uid: '2000'
-    priv: user-shell-access
-  '2':
-    descr: Paul Gomersbach  
-    name: paul.gomersbach
-    scope: user
-    authorizedkeys: c3NoLXJzYSBBQUFBQjNOemFDMXljMkVBQUFBQkpRQUFBSUJ1ZCtINXZSNGZLODRsb2xrYmJ3bCtaWTgraWMwTWYzanh6RHJZSnBKZCtoOUVJakEvcjFOcWRqRXRiSDVHZlA4eFpxWElHVkZHMXBxUHI5cE51cGY3WUF6NHRmN0krR0sxdjVuOEZUQS9QS3VmU0hySFJ6aEllU3VkM09sVjdBMkFrL21DdlltZndVUG50dzNwcTMyeVl4OUFJZXF6VjY0bm55NVR2SmM4UXc9PQ==
-    uid: '2001'
-    priv: user-shell-access
+  user:
+    '1':
+      descr: Rudi Broekhuizen 
+      name: rudi.broekhuizen
+      scope: user
+      authorizedkeys: c3NoLXJzYSBBQUFBQjNOemFDMXljMkVBQUFBREFRQUJBQUFCQVFEZVJyVnVvakV4WUJXZ0lWN1VsTGZZTHZ6R3BXOWhTenJqbDlxSjdLYjNFL3gra3EycnVtYTNMWGx2TXpGWG9DS0pNWXZxdlhVRmoyRHp3aCtpSjJiQ3loNWlsV2dUTUx2QXd6UmwxTGRBVjhJYkRWWU5aR0NIQ3pYa3l4TE1BRWR4WE1IVllsNk4vcStSQlArSFFDeVNwd09qdjg2YzVQZ1hvTDRCT254THk1VEFveFNzZnZ4UmNIVDQyVGhZSzFDL1I1UUM4VW9CZHBKMVJCaFFSakJKUE1XcDl6UnlPYWZOd0U3SXRpMTVnS0hwMDRibjlVR3FIUlRBMXVsK1E2WUVGempvcVV4ZTRWQ0hPYk02QlMvRHBEKytUUE1YanpVK2FlSjh0a3hobVlrR1JLWUp4L0tLM3VhS1B2Ky9Fa09EZVB2d1RWc2hpUTh2OXFPWHgwWUo=
+      uid: '2000'
+      priv: user-shell-access
+    '2':
+      descr: Paul Gomersbach  
+      name: paul.gomersbach
+      scope: user
+      authorizedkeys: c3NoLXJzYSBBQUFBQjNOemFDMXljMkVBQUFBQkpRQUFBSUJ1ZCtINXZSNGZLODRsb2xrYmJ3bCtaWTgraWMwTWYzanh6RHJZSnBKZCtoOUVJakEvcjFOcWRqRXRiSDVHZlA4eFpxWElHVkZHMXBxUHI5cE51cGY3WUF6NHRmN0krR0sxdjVuOEZUQS9QS3VmU0hySFJ6aEllU3VkM09sVjdBMkFrL21DdlltZndVUG50dzNwcTMyeVl4OUFJZXF6VjY0bm55NVR2SmM4UXc9PQ==
+      uid: '2001'
+      priv: user-shell-access
 
 interfaces:
   'wan':
