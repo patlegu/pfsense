@@ -67,7 +67,7 @@ hasync:
   pfsyncenabled: 'on'
   pfsyncpeerip: '192.168.1.2'
   pfsyncinterface: 'pfsync'
-  synchronizetoip: '192.168.1.2'
+  synchronizetoip: '192.168.254.2'
   username: 'admin'
   password: 'pfsense'
   synchronizeusers: 'on'
