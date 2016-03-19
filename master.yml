@@ -45,7 +45,7 @@ interfaces:
     enable: 'true'
     if: 'em2'
     descr: 'PFSYNC'
-    ipaddr: '192.168.1.1'
+    ipaddr: '192.168.254.1'
     subnet: '30'
   'opt1':
     enable: 'true'
