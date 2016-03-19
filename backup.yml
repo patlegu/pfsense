@@ -29,6 +29,18 @@ hasync:
   pfsyncpeerip: '192.168.1.1'
   pfsyncinterface: 'pfsync'
 
+filter:
+  rule:
+    '100':
+      type: pass
+      interface: pfsync
+      ipprotocol: inet
+      source:
+        any: ''
+      destination: 
+        any: ''
+      descr: 'Allow PFSYNC'
+
 vlans:
   vlan:
     '0':
