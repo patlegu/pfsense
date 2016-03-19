@@ -60,6 +60,8 @@ dhcpd:
     range: 
       from: '172.16.1.10'
       to: '172.16.1.254'
+      failover_peerip: '172.16.1.3'
+      gateway: '172.16.1.1'
 
 hasync:
   pfsyncenabled: 'on'
