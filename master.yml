@@ -81,6 +81,18 @@ hasync:
   synchronizednsforwarder: 'on'
   synchronizecaptiveportal: 'on'
 
+filter:
+  rule:
+    '100':
+      type: pass
+      interface: pfsync
+      ipprotocol: inet
+      source:
+        any: ''
+      destination: 
+        any: ''
+      descr: 'Allow PFSYNC'
+
 vlans:
   vlan:
     '0':
