@@ -65,7 +65,7 @@ dhcpd:
 
 hasync:
   pfsyncenabled: 'on'
-  pfsyncpeerip: '192.168.1.2'
+  pfsyncpeerip: '192.168.254.2'
   pfsyncinterface: 'pfsync'
   synchronizetoip: '192.168.254.2'
   username: 'admin'
