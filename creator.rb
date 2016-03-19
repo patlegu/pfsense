@@ -1,21 +1,20 @@
+#!/usr/bin/env ruby
 require 'yaml'
 
-hash = YAML::load(File.open(ARGV[0]).read)
+config_file = YAML.load_file('input.yaml')
 
-def flatten_hash(my_hash, parent=[])
-  my_hash.flat_map do |key, value|
-    case value
-      when Hash then 
-      key = "['#{key}']"  
-      flatten_hash( value, parent+[key] )
-      else 
-        key = "['#{key}']"
-        line = [(parent+[key]).join('')]
-        output = "#{line}"
-        output = output[2..-3]
-        print "$config#{output} = '#{value}';""\n"
+def flatten_hash(hash)
+  hash.each_with_object({}) do |(k, v), h|
+    if v.is_a? Hash
+      flatten_hash(v).map do |h_k, h_v|
+        h["['#{k}']#{h_k}"] = h_v
+      end
+    else
+      h["['#{k}']"] = v
     end
-  end
+   end
 end
 
-flatten_hash(hash)
+flatten_hash(config_file).each do |key,val|
+  puts "$config#{key} = '#{val}'"
+end
