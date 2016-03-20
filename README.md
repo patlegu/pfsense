@@ -1,4 +1,4 @@
-# pfsense
+# pfSense
 
 Configure pfsense firewall using developer shell.
 
