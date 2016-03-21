@@ -1,9 +1,4 @@
-# pfSense
+# Configure pfsense firewall using developer shell
 
-Configure pfsense firewall using developer shell.
-
-bundle install --path=vendor/bundle
-
-ruby creator.rb master.yml > go
-
-'/usr/local/sbin/pfSsh.php' < go
+* ruby creator.rb master.yaml > master.conf
+* ssh root@192.168.1.1 '/usr/local/sbin/pfSsh.php' < master.conf
