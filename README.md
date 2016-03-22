@@ -21,7 +21,7 @@ ruby creator.rb master.yaml > master.conf
 
 The settings above will look like this after running creator.rb:
 
-```sh
+```php
 #master.conf:
 
 $config['system']['hostname'] = 'master';
