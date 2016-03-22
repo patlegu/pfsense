@@ -1,8 +1,5 @@
 # Configure pfSense using developer shell
 
-
-* ssh root@192.168.1.1 '/usr/local/sbin/pfSsh.php' < master.conf
-
 The ruby script creator.rb will convert a YAML file into pfSense developer shell commands. This way it is possible to configure your pfSense device.
 
 ```yaml
