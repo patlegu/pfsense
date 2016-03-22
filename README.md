@@ -16,6 +16,8 @@ system:
     '1': '8.8.4.4'
 ```
 
+Run the script:
+
 ```sh
 ruby creator.rb master.yaml > master.conf
 ```
