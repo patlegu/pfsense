@@ -39,7 +39,7 @@ interfaces:
     enable: 'true'
     if: 'em1'
     descr: 'LAN'
-    ipaddr: '172.16.1.2'
+    ipaddr: '172.16.0.2'
     subnet: '24'
   'pfsync':
     enable: 'true'
@@ -50,9 +50,15 @@ interfaces:
   'opt1':
     enable: 'true'
     if: 'em1_vlan1'
-    descr: 'OPT1'
-    ipaddr: '10.1.1.1'
-    subnet: '30'
+    descr: 'VLAN_0001'
+    ipaddr: '172.16.1.2'
+    subnet: '24'
+  'opt2':
+    enable: 'true'
+    if: 'em1_vlan2'
+    descr: 'VLAN_0002'
+    ipaddr: '172.16.2.2'
+    subnet: '24'
 
 dhcpd: 
   lan: 
@@ -107,12 +113,12 @@ vlans:
     '0':
       if: 'em1'
       tag: '1'
-      descr: 'vlan1'
+      descr: 'vlan-0001'
       vlanif: 'em1_vlan1'
     '1':
       if: 'em1'
       tag: '2'
-      descr: 'vlan2'
+      descr: 'vlan-0002'
       vlanif: 'em1_vlan2'
       
 virtualip:
@@ -127,4 +133,4 @@ virtualip:
       descr: 'vip'
       type: 'single'
       subnet_bits: '24'
-      subnet: '172.16.1.1'
+      subnet: '172.16.0.1'
