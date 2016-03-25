@@ -1,7 +1,8 @@
 #!/usr/bin/env ruby
 require 'yaml'
 
-config_file = YAML.load_file(ARGV[0])
+confighash = YAML.load_file(ARGV[0])['config']
+unsethash  = YAML.load_file(ARGV[0])['unset']
 
 def flatten_hash(hash)
   hash.each_with_object({}) do |(k, v), h|
@@ -15,8 +16,12 @@ def flatten_hash(hash)
    end
 end
 
-flatten_hash(config_file).each do |key,val|
+flatten_hash(confighash).each do |key,val|
   puts "$config#{key} = '#{val}';"
+end
+
+flatten_hash(unsethash).each do |key,val|
+  puts "unset($config#{key});"
 end
 
 puts "write_config();"
