@@ -127,7 +127,7 @@ config:
       '0':
         mode: 'carp'
         interface: 'lan'
-        vhid: '1'
+        vhid: '255'
         advskew: '0'
         advbase: '1'
         password: 'password'
@@ -149,7 +149,7 @@ config:
       '2':
         mode: 'carp'
         interface: 'opt2'
-        vhid: '1'
+        vhid: '2'
         advskew: '0'
         advbase: '1'
         password: 'password'
