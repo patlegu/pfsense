@@ -48,6 +48,12 @@ config:
       descr: 'PFSYNC'
       ipaddr: '192.168.254.1'
       subnet: '29'
+    'management':
+      enable: 'true'
+      if: 'em3'
+      descr: 'MANAGEMENT'
+      ipaddr: '192.168.253.1'
+      subnet: '29'
     'opt1':
       enable: 'true'
       if: 'em1_vlan1'
