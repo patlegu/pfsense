@@ -75,6 +75,11 @@ config:
         to: '172.16.0.254'
         failover_peerip: '172.16.0.3'
         gateway: '172.16.0.1'
+    management:
+      enable: ''
+      range:
+        from: '192.168.253.3'
+        to: '192.168.253.6'
   
   hasync:
     pfsyncenabled: 'on'
