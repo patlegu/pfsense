@@ -24,6 +24,12 @@ config:
       descr: 'PFSYNC'
       ipaddr: '192.168.254.2'
       subnet: '29'
+    'management':
+      enable: 'true'
+      if: 'em3'
+      descr: 'MANAGEMENT'
+      ipaddr: '192.168.253.2'
+      subnet: '29'
     'opt1':
       enable: 'true'
       if: 'em1_vlan1'
@@ -44,7 +50,7 @@ config:
   
   filter:
     rule:
-      '100':
+      '10':
         type: pass
         interface: pfsync
         ipprotocol: inet
@@ -53,6 +59,15 @@ config:
         destination: 
           any: ''
         descr: 'Allow PFSYNC'
+      '11':
+        type: pass
+        interface: management
+        ipprotocol: inet
+        source:
+          any: ''
+        destination: 
+          any: ''
+        descr: 'Allow MANAGEMENT'
   
   vlans:
     vlan:
