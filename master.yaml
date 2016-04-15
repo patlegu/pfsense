@@ -73,8 +73,8 @@ config:
       range: 
         from: '172.16.0.10'
         to: '172.16.0.254'
-        failover_peerip: '172.16.0.3'
-        gateway: '172.16.0.1'
+      failover_peerip: '172.16.0.3'
+      gateway: '172.16.0.1'
     management:
       enable: ''
       range:
