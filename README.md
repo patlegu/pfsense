@@ -38,3 +38,6 @@ You can apply those settings with the following command:
 ```sh
 ssh root@192.168.1.1 '/usr/local/sbin/pfSsh.php' < master.conf
 ```
+
+
+Blog: https://rudibroekhuizen.wordpress.com
