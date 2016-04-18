@@ -119,6 +119,38 @@ config:
         destination: 
           any: ''
         descr: 'Allow PFSYNC'
+ 
+  aliases:
+    alias:
+      '0':
+        name: 'netw_10_0_0_0_8'
+        address: '10.0.0.0/8'
+        type: 'network'
+        descr: 'Network RFC 1918'
+      '1':
+        name: 'netw_172_16_0_0_12'
+        address: '172.16.0.0/12'
+        type: 'network'
+        descr: 'Network RFC 1918'
+      '2':
+        name: 'netw_192_168_0_0_16'
+        address: '192.168.0.0/16'
+        type: 'network'
+        descr: 'Network RFC 1918'
+      '3':
+        name: 'netw_grp_001'
+        address: 'netw_10_0_0_0_8 netw_172_16_0_0_12 netw_192_168_0_0_16'
+        type: 'network'
+        descr: 'Network group RFC 1918'
+      '4':
+        name: 'addr_10_0_0_1'
+        address: '10.0.0.1'
+        type: 'host'
+        descr: 'Server management'
+      '5':
+        name: 'port_grp_001'
+        address: '80 22'
+        type: 'port'
   
   vlans:
     vlan:
