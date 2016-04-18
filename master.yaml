@@ -149,7 +149,7 @@ config:
         descr: 'Server management'
       '5':
         name: 'port_grp_001'
-        address: '80 22'
+        address: '22 80'
         type: 'port'
   
   vlans:
