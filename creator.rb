@@ -2,7 +2,12 @@
 require 'yaml'
 
 confighash = YAML.load_file(ARGV[0])['config']
-unsethash  = YAML.load_file(ARGV[0])['unset']
+begin
+  unsethash = YAML.load_file(ARGV[0])['unset']
+rescue
+  puts 'unset not found'
+  unsethash = false
+end
 
 def flatten_hash(hash)
   hash.each_with_object({}) do |(k, v), h|
@@ -20,8 +25,10 @@ flatten_hash(confighash).each do |key,val|
   puts "$config#{key} = '#{val}';"
 end
 
-flatten_hash(unsethash).each do |key,val|
-  puts "unset($config#{key});"
+if unsethash
+  flatten_hash(unsethash).each do |key,val|
+    puts "unset($config#{key});"
+  end
 end
 
 puts "write_config();"
